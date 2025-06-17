@@ -73,8 +73,15 @@ const StreelancerSteps = () => {
         <div className="hire-box">
           <h3>Be a part of Streelancer .</h3>
           <ul>
-            <li><b>24x7</b> Support</li>
-            <li><b>Verified</b> Talent</li>
+            <li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+  <img src={require("../../images/message.png")} alt="icon" style={{ width: "30px", height: "30px" }} />
+  <span><b>24x7</b> <br/>Support</span>
+</li>
+            <li style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+  <img src={require("../../images/verified.png")} alt="icon" style={{ width: "30px", height: "30px" }} />
+  <span><b>Verified</b> <br/>Talent</span>
+</li>
+          
           </ul>
           <button className="hire-btn">Hire Now</button>
         </div>

@@ -628,12 +628,18 @@ background-repeat: no-repeat;
 }
 
 .hire-box {
-  background-color: #d07c5d;
-  color: white;
-  padding: 30px;
-  width: 300px;
-  text-align: left;
-  position: relative;
+background-color: #d07c5d;
+    color: white;
+    padding: 30px;
+    width: 300px;
+    text-align: left;
+    position: relative;
+    display: flex
+;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: flex-start;
+    align-items: self-start;
 }
 
 .hire-box h3 {
