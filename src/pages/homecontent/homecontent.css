@@ -554,7 +554,7 @@ right: -122px;
   width: 200px;
   padding: 20px;
   box-shadow: 0 0 15px rgba(0,0,0,0.1);
-
+text-align: left;
 }
 
 .step-number {
@@ -618,7 +618,7 @@ background-repeat: no-repeat;
 
 .employer-point {
       margin-bottom: 15px;
-    background-color: #ddddfb;
+    background-color: #cc896c4d;
     padding: 4px;
     color: #5c005c;}
 
