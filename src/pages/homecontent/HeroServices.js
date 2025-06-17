@@ -2,12 +2,15 @@
 import React from 'react';
 import './homecontent.css';
 import ServiceCard from './herocard';
-import img1 from "../../images/top.png"
-import img2 from "../../images/side.png"
-import img3 from "../../images/top1.png"
-import img4 from "../../images/side1.png"
-import img6 from "../../images/side3.png"
-import img5 from "../../images/side2.png"
+
+import img1 from "../../images/side1.png"
+import img2 from "../../images/side2.png"
+import img3 from "../../images/side3.png"
+import img4 from "../../images/side4.png"
+import icon1 from "../../images/img1.png"
+   import icon2 from  "../../images/img2.png"
+   import icon3 from  "../../images/img3.png"
+      import icon4 from  "../../images/img4.png"
 
 function HeroServices() {
   return (
@@ -18,53 +21,59 @@ function HeroServices() {
       </p>
 
       <div className="services-grid">
+       
         <ServiceCard
-          title="Academy"
+          title="Remote"
           className="bluecard"
-          subtitle="Learn & Upskill"
+          subtitle="Women Workforce"
           points={[
             "Industry-relevant courses for women, queer professionals, returnees, and the silver generation.",
             "Hands-on learning, live mentorship, real-world projects, and certifications."
           ]}
-          image1={img1}
-          image2={img2}
+          img={icon1}
+          mainImage={img1}
+          
+       
           altText="Academy"
         />
 
         <ServiceCard
-          title="Marketplace"
+          title="Global"
           className="orgcard"
-          subtitle="Find Freelance & Remote Work"
+          subtitle="Flexwork Network"
           points={[
             "Match with freelance gigs or part-time roles based on your skills and goals.",
             "Writer, Designer, Virtual Assistant (VA), SDR & more."
           ]}
-           image1={img3}
-          image2={img4}
+           img={icon2}
+           mainImage={img2}
+      
           altText="Marketplace"
         />
         <ServiceCard
-          title="Marketplace"
+          title="DEI Talent"
           className="orgcard"
-          subtitle="Smart Registration - Guided Onboarding"
+          subtitle="Network"
           points={[
-            "Match with freelance gigs or part-time roles based on your skills and goals.",
-            "Writer, Designer, Virtual Assistant (VA), SDR & more."
+            "Personalized journey based on your career goals and experience.",
+            "AI-powered skill assessment, custom recommendations, and career path mapping."
           ]}
-           image1={img3}
-          image2={img6}
+           img={icon3}
+           mainImage={img3}
+       
           altText="Marketplace"
         />
        <ServiceCard
-          title="Academy"
+          title="Remote Woman"
           className="bluecard"
-          subtitle="Employers - Hire Remote DEI Women Talent"
+          subtitle="Workforce."
           points={[
-            "Industry-relevant courses for women, queer professionals, returnees, and the silver generation.",
-            "Hands-on learning, live mentorship, real-world projects, and certifications."
+            "Access pre-vetted, remote-ready women across industries",
+            "HFast closures, flexible formats, zero infra cost."
           ]}
-          image1={img1}
-          image2={img5}
+           img={icon4}
+          mainImage={img4}
+          icons={[icon1,icon2,icon3]}
           altText="Academy"
         />
       </div>

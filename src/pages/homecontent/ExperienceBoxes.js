@@ -16,6 +16,10 @@ function CareerPathCards() {
       </p>
 
       <div className="card-container">
+
+
+
+        
         {/* Card 1 */}
         <div className="card returnee-card">
           <img src={returneeImg} alt="Career Returnees" className="card-image" />
@@ -25,7 +29,14 @@ function CareerPathCards() {
             <p>
               Restart your career with confidence. Whether it's been 2 years or 10, we match your existing skills with flexible freelance projects so you can ease back into the workforce.
             </p>
-            <button className="register-btn">Register Now</button>
+           
+           
+
+            <div className="btn-wrapper">
+  <button className="register-btn">Register Now</button>
+  <img src={require("../../images/line.png")} alt="arrow" className="arrow-image left" />
+</div>
+
           </div>
         </div>
 
@@ -37,11 +48,15 @@ function CareerPathCards() {
             <p>
               Your experience is your power. We help you explore remote roles that value wisdom, patience, and professionalism—no steep learning curves, just real contributions.
             </p>
-                        <button className="register-btn">Register Now</button>
+                        <div className="btn-wrapper" style={{ alignSelf: "flex-end"}}>
+  <button className="register-btn">Register Now</button>
+  <img src={require("../../images/line2.png")} alt="arrow" className="arrow-image right" />
+</div>
           </div>
           <img src={silverImg} alt="Silver Generation" className="card-image" />
         </div>
 
+        {/* card 3 */}
          <div className="card blue-card">
             <img src={ex3} alt="Silver Generation" className="card-image" />
           <div className="card-content">
@@ -50,11 +65,15 @@ function CareerPathCards() {
             <p>
               Find projects in inclusive, safe spaces. We partner with diversity-first employers and offer creative, technical, and client-facing roles with full respect for identity.
             </p>
-                        <button className="register-btn">Register Now</button>
+                          <div className="btn-wrapper">
+  <button className="register-btn">Register Now</button>
+  <img src={require("../../images/line.png")} alt="arrow" className="arrow-image left" />
+</div>
           </div>
           
         </div>
-
+       
+       {/* card 4 */}
         <div className="card yellow-card">
           <div className="card-content">
             <h3>Fresh Freelancers and Students</h3>
@@ -62,11 +81,15 @@ function CareerPathCards() {
             <p>
               Kickstart your journey in the gig economy. Gain experience, earn on the side, and build your professional portfolio through beginner-friendly freelance roles.
             </p>
-                        <button className="register-btn">Register Now</button>
+                        <div className="btn-wrapper" style={{ alignSelf: "flex-end"}}>
+  <button className="register-btn">Register Now</button>
+  <img src={require("../../images/line2.png")} alt="arrow" className="arrow-image right" />
+</div>
           </div>
           <img src={ex4} alt="Silver Generation" className="card-image" />
         </div>
-
+       
+       {/* card 5 */}
         <div className="card green-card">
             <img src={ex5} alt="Silver Generation" className="card-image" />
           <div className="card-content">
@@ -78,10 +101,18 @@ function CareerPathCards() {
 Access remote jobs that focus on what you can do, not what you can't. Work comfortably from home with supportive clients who understand accessibility needs.
 
             </p>
-                        <button className="register-btn">Register Now</button>
+                           <div className="btn-wrapper">
+  <button className="register-btn">Register Now</button>
+  <img src={require("../../images/line.png")} alt="arrow" className="arrow-image left" />
+</div>
           </div>
           
         </div>
+
+
+
+
+        
       </div>
     </section>
   );

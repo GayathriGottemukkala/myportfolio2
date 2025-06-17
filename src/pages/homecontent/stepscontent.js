@@ -4,10 +4,13 @@
 import { HiOutlineUserAdd, HiOutlineBookOpen, HiOutlineBriefcase } from 'react-icons/hi';
 import { LuRoute } from 'react-icons/lu'; // Clean outlined route icon
 
+import ic2 from "../../images/refund.png"
+import ic3 from "../../images/book.png"
+import ic1 from "../../images/adduser.png"
+
 const stepIcons = [
-  <HiOutlineUserAdd className="step-icon" />,
-  <LuRoute className="step-icon" />,
-  <HiOutlineBookOpen className="step-icon" />,
+
+  <img src={ic1}/>, <img src={ic2}/>, <img src={ic3}/>,
   <HiOutlineBriefcase className="step-icon" />
 ];
 
@@ -22,15 +25,19 @@ const StreelancerSteps = () => {
       {/* Top Steps */}
       <div className="steps-grid">
         {[
-          { num: "01", title: "Create Your Profile", desc: "Complete your profile and take our career assessment quiz" },
-          { num: "02", title: "Smart Routing", desc: "Get personalized recommendations based on your skills and goals" },
-          { num: "03", title: "Learn & Build Profile", desc: "Enhance your skills and create a standout professional profile" },
-          { num: "04", title: "Get Hired", desc: "Connect with employers and secure remote opportunities that match your profile" }
+          { num: "1", title: "Create Your Profile", desc: "Complete your profile and take our career assessment quiz" },
+          { num: "2", title: "Smart Routing", desc: "Get personalized recommendations based on your skills and goals" },
+          { num: "3", title: "Learn & Build Profile", desc: "Enhance your skills and create a standout professional profile" },
+          { num: "4", title: "Get Hired", desc: "Connect with employers and secure remote opportunities that match your profile" }
         ].map((step, idx) => (
           <div className="step-card" key={idx}>
-            <div className="step-number">{step.num}</div>
+            <div className='step-zero'></div>
+            <div className="step-number"><span> 0 </span>{step.num}</div>
             <h3 className="step-title">{step.title}</h3>
+            <img src={require("../../images/circle.png")}/>
+            <br/>
               {stepIcons[idx]}
+             
             <p className="step-desc">{step.desc}</p>
           </div>
         ))}
